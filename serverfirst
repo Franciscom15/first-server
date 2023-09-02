@@ -1,0 +1,10 @@
+const http = require('http');
+const host = "localhost':
+const port = 3000;
+const dogs = ['Solovino', 'Canelo'];
+const server = http.createServer( (reg, res) => {
+res.end();
+});
+server. listen(port, host, () => {
+console. log (' [Server]: I am listening at http://${host}:${port}');
+});
